@@ -1,0 +1,238 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+}
+
+.he{
+    width: 100%;
+    height: 88px;
+    background-color: rgb(47, 1, 90);
+    text-align: center;
+    font-size: 35px;
+    border-bottom: 2px solid ;
+}
+
+.he h1{
+    padding: -10px ;
+    color: azure;
+}
+
+.container main{
+    width:100%;
+    height: 90%;
+    background-color:rgba(252, 252, 252, 0.13);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+ .bu1{
+    width: 300px;
+    height: 50px;
+    margin-bottom: 150px;
+    position: absolute;
+    border-radius: 40px 8px;
+    background-color: aliceblue;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(75, 6, 139);
+    transition-property:width,height ;
+    transition-duration: .5s;
+}
+
+
+
+.bu2{
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    border-radius: 8px 40px;
+    background-color: aliceblue;
+    font-size:30px;
+    color: rgb(75, 6, 139);
+    font-weight: bold;
+    transition-property:width,height ;
+    transition-duration: .5s;
+}
+
+
+.bu1:hover {
+    background-color:  rgb(201, 153, 233);
+    width: 350px;
+    height: 60px;
+}
+
+.bu2:hover {
+    background-color: rgb(197, 167, 218);
+    width: 350px;
+    height: 60px;
+}
+
+#hide{
+    background-color: rgba(133, 71, 233, 0.219);
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    margin-bottom:-160px ;
+    border-bottom-right-radius:30px ;
+    border-top-left-radius:30px ;
+}
+
+span{
+    font-size: 20px;
+    color: rgb(59, 6, 109);
+}
+
+.us{
+    display:none;
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    background-color:  rgba(146, 85, 245, 0.315);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+footer a{
+    text-decoration: none;
+    font-size: 30px;
+    color:rgb(255, 255, 255) ;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/*next sectaion*/
+
+
+.all{
+    text-align: center;
+    margin: auto;
+    margin-top:150px ;
+    width: 80vw;
+    height: 60vh;
+}
+
+.title{
+    width: 100%;
+    height: 8%;
+    background-color: rgb(62, 9, 112);
+}
+
+.title span,.title{
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.title span{
+    margin: 15px;
+}
+
+main{
+    width: 100%;
+    height:92% ;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+.square{
+    width: 30%;
+    height:30%;
+    float: left;
+    margin: 8px;
+    background-color: rgba(221, 166, 235, 0.466);
+    font-size:200px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:55px ;
+    padding-bottom: 38px;
+    align-content: center;
+    color: rgb(0, 0, 0);
+}
+
+.square:hover{
+    cursor: pointer;
+    background-color: rgb(75, 74, 74);
+}
+
+.big{
+    width: auto;
+    height: 920px;
+    min-height: auto;
+    background-image: url(https://www.shutterstock.com/shutterstock/photos/709731865/display_1500/stock-vector-seamless-pattern-of-game-tic-tac-toe-drawing-of-white-contour-on-black-background-vector-709731865.jpg);
+    background-size:cover ;
+    background-position: center;
+    display: block;
+    text-align: center;
+}
+
+#re{
+    position: relative;
+    top:10%;
+    width: 30vw;
+    height: 6vh;
+    border-radius: 50px;
+    border-color:rgb(53, 4, 99) ;
+    background-color: rgba(255, 255, 255, 0.829);
+    color: rgb(85, 13, 151);
+    font-size: 37px;
+    font-weight: bold;
+    transition-property: width,top,heigth;
+    transition-duration:.5s ;
+}
+
+#re:hover{
+    background-color: rgba(181, 151, 238, 0.87);
+    width: 33vw;
+    height: 6vh;
+    top:110px
+    
+}
+
+@media(max-width:450px){
+    .square{
+        width: 30%;
+        height:30%;
+        float: left;
+        margin: 2px;
+        font-size: 90px;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left:25px ;
+        padding-bottom: 28px;
+        align-content: center;
+        color: rgb(147, 11, 238);
+    }
+    #re{
+        position: relative;
+        top:10%;
+        width: 30vw;
+        height: 5vh;
+        border-radius: 50px;
+        border-color:rgb(53, 4, 99) ;
+        color: rgb(85, 13, 151);
+        font-size: 20px;
+        font-weight: bold;
+        transition-property: width,top,heigth;
+        transition-duration:.5s ;
+    }
+}
