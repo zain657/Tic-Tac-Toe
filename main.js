@@ -10,7 +10,7 @@ about.onclick = function () {
 
 let openwindow=document.getElementById("buu1");
 openwindow.onclick=function(){
-    window.location.href = "file:///C:/Users/Microsoft/OneDrive/Desktop/aplication%204/index2.html";
+    window.location.href = "index2.html";
 }
 
 
